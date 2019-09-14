@@ -1,0 +1,86 @@
+<!doctype html>
+<html oncontextmenu="return false">
+<head>
+<meta charset="UTF-8">
+<title>WorkHub</title>
+</head>
+<link rel="stylesheet" href="styles.css">
+<body>
+	<!Stop inspecting my elemnt what you doin g!>
+	<script src="script.js" type="text/javascript"></script>
+	<a href="index.html">
+	<img id="logo" src="logo.png" width="50%" alt="logo">
+	</a>
+	<div display="inline-block" id="loginPage">
+		<form>
+			<p>
+			<label>Username</label>
+			<input type="text" id="userInput">
+			</p>
+			<p>
+			<label>Password</label>
+			<input type="password" id ="passInput" >
+			</p>
+			<p>
+			<input type="button" onClick="login()" value="Login">
+			</p>
+		</form>
+		<p style="color: darkred; font-size: 12px; display: none;" id="incorrect">Incorrect username or password.</p>
+		<input type="button" value="Forgot Passord?" onClick="forgot()">
+		<div id="forgotPassword" style="display: none;">
+			<input type="text" id="forgotPassUser" placeholder="Username">
+			<input type="text" id="forgotPassId" placeholder="Reset ID">
+			<input type="button" value="Get Password" onClick="recover()">
+		</div>
+	</div>
+	<div id="loggedIn" style="display: none;">
+		<h2>Welcome to the Don't Snitch Hub <h2 id="userDisplay"></h2></h2><input type="button" value="Sign Out" onClick="signOut()"><input type="button" value="Admin" onClick="admin()">
+		<input type="button" value="Reset ID" onClick="resetId()">
+		<p>Find all your needs here, with only one rule.</p>
+		<p>Don't Snitch.</p>
+		<h2 id="adminModeEnabled">Admin mode disabled.</h2>
+		<input type="button" value="Admin Pannel" id="adminButton" onClick="toggleVisible('adminPanel')" style="display: none;">
+		<br>
+		<div id="adminPanel" style="display:none;">
+		<br>
+			<h2>Admin Panel</h2>
+			<input type="text" id="adminLine" placeholder="Command">
+			<input type="button" onClick="command()" value="Perform">
+			
+			<br>
+		</div>
+		<br>
+		<br>
+		<input type="button" value="Panic" id="panic" onClick="panic()">
+		<input type="button" value="Unblockedgames" onClick="unB()">
+		<input type="button" value="Youtube" onClick="youtube()">
+		<input type="button" value="Minesweeper" onClick="minesweeper()">
+		<input type="button" value="No Restrictions" onClick="unblock()">
+		<div id="unB" style="display: none;">
+			<h3>Unblocked Games</h3>
+			<p>Enter a number between 1 and 80 to enter an unblocked games website.</p>
+			<p class="f1">https://sites.google.com/site/allunblockedgames<input type="number" max="80" min="1" id="unBInput"></p>
+			<input type="button" onClick="unBo()" value="Go"><input type="button" value="Hide" onClick="hideUnB()">
+		</div>
+		<div id="youtube" style="display: none;">
+			<h3>Youtube</h3>
+			<p>2 Pages will open, if the first page doesn;t instantly goto youtube do the following with the second page;After clicking on the below button, click on the first link that says 'The Open - YouTube' and after that use YouTube as you like.</p>
+			<input type="button" value="Click here." onClick="openYouTubeSearch()"><input type="button" value="Hide" onClick="hide()">
+		</div>
+		<div id="mineSweeper" style="display:none;">
+			<h2>Minesweeper</h2>
+			<p>Still working on this one so for best experience just google Minesweeper and play Google's, however this one still works.</p><input type="button" value="Hide" onClick="hide()">
+			<div>
+<script src="https://cdn.htmlgames.com/embed.js?game=MinesweeperClassic&amp;&amp;bgcolor=white"></script>
+</div>
+		</div>
+		<div id="unblock" style="display: none;">
+			<h3>Unblock all websites</h3>
+			<p>Use the following proxy site to use any site you like.</p><input type="button" value="Hide" onClick="hide()">
+			<iframe src="https://www.vpnbook.com/webproxy" height="500px" width="100%">Your computer/browser doesn't support this feature.</iframe>
+		</div>
+		
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color: black;
+	color: white;
+	text-decoration: none;
+	float: left;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	letter-spacing: 2px;
+}
+
+#logo {
+	margin: 0px 25%
+}
+
+#loginPage {
+	background-color: dimgray;
+	text-decoration: none;
+	padding: 20px 70px;
+	opacity: 0.7;
+	float: left;
+	margin: 0px 40%;
+	border-radius: 7px;
+	border: solid black 1px;
+	align-content: center;
+	align-self: center;
+	text-align: center;
+	font-size: 18px;
+	letter-spacing: 2px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+input [type="text"]{
+	border: solid 1px silver;
+	background-color: silver;
+	opacity: 0.7;
+	border-radius: 5px;
+}
+
+input[type="button"]{
+	background-color: gray;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+	opacity: 0.6;
+}
+
+input [type="number"]{
+	border: solid 1px silver;
+	background-color: silver;
+	opacity: 0.7;
+	border-radius: 5px;
+}
+
+#f1 {
+	color: gray;
+	opacity: 0.8;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
